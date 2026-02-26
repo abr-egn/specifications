@@ -186,7 +186,9 @@
             "updateDescription": {
               "$$type": "object"
             },
-            "fullDocument": null
+            "fullDocument": {
+              "$$unsetOrMatches": null
+            }
           }
         }
       ],
@@ -491,7 +493,9 @@
             "updateDescription": {
               "$$type": "object"
             },
-            "fullDocumentBeforeChange": null
+            "fullDocumentBeforeChange": {
+              "$$unsetOrMatches": null
+            }
           }
         }
       ],

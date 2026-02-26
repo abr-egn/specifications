@@ -90,7 +90,7 @@ tests:
           operationType: "update"
           ns: { db: *database0Name, coll: *collection0Name }
           updateDescription: { $$type: "object" }
-          fullDocument: null
+          fullDocument: { $$unsetOrMatches: null }
     expectEvents:
       - client: *client0
         events:
@@ -215,7 +215,7 @@ tests:
           operationType: "update"
           ns: { db: *database0Name, coll: *collection0Name }
           updateDescription: { $$type: "object" }
-          fullDocumentBeforeChange: null
+          fullDocumentBeforeChange: { $$unsetOrMatches: null }
     expectEvents:
       - client: *client0
         events:
